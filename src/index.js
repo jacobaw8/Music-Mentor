@@ -6,6 +6,7 @@ import ProjectStack from './navigation/ProjectStack';
 import HomeScreen from './screens/MainScreens/HomeScreen';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 import RecordScreen from './screens/TransposeScreens/RecordScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 ReactDOM.render(
