@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Music-Mentor/static/js/main.b41c105c.js",
+    "main.js": "/Music-Mentor/static/js/main.4823031f.js",
     "static/media/half-note.png": "/Music-Mentor/static/media/half-note.e1f82bee3eaa7494bb12.png",
     "static/media/dropdown_icon.png": "/Music-Mentor/static/media/dropdown_icon.7cb00a237ad4dc7bbc79.png",
     "static/media/treble-clef.png": "/Music-Mentor/static/media/treble-clef.7cb00a237ad4dc7bbc79.png",
@@ -97,9 +97,9 @@
     "static/media/Gb6.mp3": "/Music-Mentor/static/media/Gb6.b1cdfb6f5c7206354242.mp3",
     "static/media/Gb7.mp3": "/Music-Mentor/static/media/Gb7.0e0d2c634574a6f84284.mp3",
     "index.html": "/Music-Mentor/index.html",
-    "main.b41c105c.js.map": "/Music-Mentor/static/js/main.b41c105c.js.map"
+    "main.4823031f.js.map": "/Music-Mentor/static/js/main.4823031f.js.map"
   },
   "entrypoints": [
-    "static/js/main.b41c105c.js"
+    "static/js/main.4823031f.js"
   ]
 }
