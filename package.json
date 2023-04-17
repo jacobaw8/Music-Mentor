@@ -1,10 +1,11 @@
 {
-  "homepage": "http://jacobaw8.github.io/Music-Mentor",
+  "homepage": ".",
   "name": "mobile",
   "version": "1.0.0",
   "main": "./src/index.js",
   "scripts": {
     "start": "expo start --dev-client",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "android": "expo run:android",
