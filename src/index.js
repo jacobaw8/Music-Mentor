@@ -6,17 +6,10 @@ import HomeScreen from './screens/MainScreens/HomeScreen';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 import RecordScreen from './screens/TransposeScreens/RecordScreen';
 
-const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<App />}>
-        <Route path="dashboard" element={<HomeScreen />} />
-      </Route>
-    )
-  );
 
 ReactDOM.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <HomeScreen />
     </React.StrictMode>,
     document.getElementById('root')
 );
