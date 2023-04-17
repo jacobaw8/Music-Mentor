@@ -2,11 +2,14 @@ import { registerRootComponent } from 'expo';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './App';
+import HomeScreen from './screens/MainScreens/HomeScreen';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
+import RecordScreen from './screens/TransposeScreens/RecordScreen';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<App />}>
+        <Route path="dashboard" element={<HomeScreen />} />
       </Route>
     )
   );
