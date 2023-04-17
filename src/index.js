@@ -10,7 +10,9 @@ import RecordScreen from './screens/TransposeScreens/RecordScreen';
 
 ReactDOM.render(
     <React.StrictMode>
-        <ProjectStack />
+        <NavigationContainer>
+            <ProjectStack />
+        </NavigationContainer>
     </React.StrictMode>,
     document.getElementById('root')
 );
