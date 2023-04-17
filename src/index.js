@@ -11,9 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 ReactDOM.render(
     <React.StrictMode>
-        <NavigationContainer>
-            <ProjectStack />
-        </NavigationContainer>
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );
