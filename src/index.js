@@ -2,16 +2,13 @@ import { registerRootComponent } from 'expo';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './App';
-import ProjectStack from './navigation/ProjectStack';
-import HomeScreen from './screens/MainScreens/HomeScreen';
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 import RecordScreen from './screens/TransposeScreens/RecordScreen';
 import { NavigationContainer } from '@react-navigation/native';
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <RecordScreen />
     </React.StrictMode>,
     document.getElementById('root')
 );

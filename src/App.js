@@ -4,19 +4,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import ProjectStack from './navigation/ProjectStack';
 import { BrowserRouter } from 'react-router-dom';
 import { useNavigate, Routes, Route } from 'react-router';
-import HomeScreen from './screens/MainScreens/HomeScreen';
 
 export default function App() {
  
   
 
   return (
-
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={HomeScreen} />
-      </Routes>
-    </BrowserRouter>
+    <NavigationContainer>
+      <ProjectStack />
+    </NavigationContainer>
   );
 };
 
