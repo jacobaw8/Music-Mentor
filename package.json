@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "http://jacobaw8.github.io/Music-Mentor",
   "name": "mobile",
   "version": "1.0.0",
   "main": "./src/index.js",
