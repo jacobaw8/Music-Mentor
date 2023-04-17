@@ -38,7 +38,7 @@ const Tabs = () => {
             }}
         >
             <Tab.Screen name="Home" component={HomeScreen} options={{
-            title: 'Dashboard',
+            title: 'Dashbodsadaard',
             headerShown: false,
             headerStyle: {
                 backgroundColor: '#0F346B',
