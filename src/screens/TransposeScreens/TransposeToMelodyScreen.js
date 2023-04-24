@@ -15,7 +15,7 @@ const TransposeToMelodyScreen = ({ navigation }) => {
 
     const curr_audio = location.state;
 
-    
+
 
     return (
         <View style={styles.back}>
@@ -49,6 +49,10 @@ const TransposeToMelodyScreen = ({ navigation }) => {
             >
                 <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(33%)' }}>Continue</Text>
             </TouchableOpacity>
+
+            <View
+                style={{ backgroundColor: '#EBEBEB', height: '400px' }}
+            />
         </View>
     );
 };
