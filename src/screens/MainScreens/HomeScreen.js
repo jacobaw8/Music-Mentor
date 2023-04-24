@@ -27,7 +27,11 @@ const HomeScreen = () => {
             >
                 <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(-33%)' }}>Transposition</Text>
             </TouchableOpacity>
+            <View 
+            style={{ backgroundColor: '#EBEBEB', height: '400px'}}
+            />    
         </View>
+
     );
 
 };
@@ -87,6 +91,7 @@ const styles = StyleSheet.create({
         width: '100vw',
         height: '100vh',
         backgroundColor: '#EBEBEB',
+        overflow: 'hidden',
     },
     heading: {
         fontSize: 20,
