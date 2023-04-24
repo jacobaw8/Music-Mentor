@@ -35,7 +35,6 @@ const TransposeToMelodyScreen = ({ navigation }) => {
                 style={{
                     transform: 'translateY(-350px)',
                     marginHorizontal: 'auto',
-                    backgroundColor: 'lightgray',
                     width: '150px',
                     marginTop: '400px',
                     height: '30px',
