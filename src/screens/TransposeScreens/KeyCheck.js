@@ -52,6 +52,9 @@ const KeyCheck = ({ navigation, route }) => {
             >
                 <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(33%)' }}>Continue</Text>
             </TouchableOpacity>
+            <View 
+                        style={{ backgroundColor: '#EBEBEB', height: '400px'}}
+                    />  
         </View>
     );
 };
@@ -87,6 +90,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: '#EBEBEB',
+        overflow: 'hidden',
     },
     heading: {
         fontSize: 20,

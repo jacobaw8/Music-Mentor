@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: '#EBEBEB',
+        overflow: 'hidden',
     },
     heading: {
         fontSize: 20,
