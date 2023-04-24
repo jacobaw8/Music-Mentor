@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import ProjectStack from './navigation/ProjectStack';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from './screens/MainScreens/HomeScreen';
 import PlayScreen from './screens/MainScreens/PlayScreen';
 import RecordScreen from './screens/TransposeScreens/RecordScreen';
@@ -18,7 +18,7 @@ export default function App() {
 
 
   return (
-    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+    <HashRouter basemname={`/${process.env.PUBLIC_URL}`}>
       <Routes>
         <Route exact path="/" element={<HomeScreen />} />
         <Route path="/play" element={<PlayScreen />} />
@@ -30,7 +30,7 @@ export default function App() {
         <Route path="/t5" element={<ChordProgressionComplement />} />
         <Route path="/t6" element={<ScoreScreen />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     // <NavigationContainer>
     //   <ProjectStack />
     // </NavigationContainer>
