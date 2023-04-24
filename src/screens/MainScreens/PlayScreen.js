@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, Pressable, Image, NativeModules } from 'react-native';
 import Measure from '../../components/Measure.js';
+import { useNavigate } from 'react-router-dom';
 
 const API_URL = Platform.OS !== 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 //const API_URL = 'http://localhost:5000';
@@ -11,9 +12,9 @@ const HEIGHT_OF_MEASURE = 8;
 
 
 
-const PlayScreen = ({ navigation }) => {
+const PlayScreen = () => {
 
-
+    const navigate = useNavigate();
 
 
     return (

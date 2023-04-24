@@ -1,14 +1,15 @@
 import React, { useState, useEffect, Component, Card, Background, Logo } from 'react';
-
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, Pressable, Image } from 'react-native';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const API_URL = Platform.OS !== 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 //const API_URL = 'http://localhost:5000';
 
 
-const RecordScreen = ({ state, navigation, route }) => {
+const RecordScreen = ({ navigation, route }) => {
+
+    const navigate = useNavigate();
 
     const [isClickable, setIsClickable] = useState(false)
     const [currentRecording, setCurrentRecording] = useState(null)
@@ -68,7 +69,8 @@ const RecordScreen = ({ state, navigation, route }) => {
             <View style={styles.header}>
                 <TouchableOpacity style={styles.headerHome}
                     onPress={() => {
-                        navigation.navigate('MainNav');
+                        navigate('/');
+                        //navigation.navigate('MainNav');
                     }}
                 ><Text>Home</Text></TouchableOpacity>
                 <Text style={styles.headerTitle}>Transpose</Text>
@@ -105,7 +107,8 @@ const RecordScreen = ({ state, navigation, route }) => {
                         borderRadius: '10%',
                     }}
                     onPress={() => {
-                        navigation.navigate('Transpose1', {audio: currentRecording});
+                        navigate('/t1', {state:{audio: currentRecording}})
+                        //navigation.navigate('Transpose1', {audio: currentRecording});
                     }}
                 >
                     <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(-33%)' }}>Start Lesson!</Text>

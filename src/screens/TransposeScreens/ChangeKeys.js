@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Measure from '../../components/Measure.js';
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, Pressable } from 'react-native';
+import { useNavigate } from 'react-router-dom';
 
 const API_URL = Platform.OS !== 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 //const API_URL = 'http://localhost:5000';
 
 const ChangeKeys = ({ navigation, route }) => {
+
+    //const navigate = useNavigate();
 
     return (
         <View style={styles.back}>

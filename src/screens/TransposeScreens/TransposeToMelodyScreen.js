@@ -1,26 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import Measure from '../../components/Measure.js';
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, Pressable } from 'react-native';
+import { useNavigate, useLocation } from 'react-router-dom';
+
 
 const API_URL = Platform.OS !== 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 //const API_URL = 'http://localhost:5000';
 
-const TransposeToMelodyScreen = ({ navigation, route }) => {
+const TransposeToMelodyScreen = ({ navigation }) => {
 
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location);
+
+    const curr_audio = location.state;
+
+    
 
     return (
         <View style={styles.back}>
             <View style={styles.header}>
                 <TouchableOpacity style={styles.headerHome}
                     onPress={() => {
-                        navigation.navigate('MainNav');
+                        navigate('/');
                     }}
                 ><Text>Home</Text></TouchableOpacity>
                 <Text style={styles.headerTitle}>Transpose1</Text>
             </View>
             <Text style={styles.heading}>First Lesson Screen</Text>
             <Text style={styles.heading}>Build your melody using the sheet below!</Text>
-            <Measure audio={route.params.audio}></Measure>
+            <Measure audio={curr_audio}></Measure>
             <TouchableOpacity
                 //style={styles.inputContinue}
                 style={{
@@ -35,7 +44,7 @@ const TransposeToMelodyScreen = ({ navigation, route }) => {
                     borderRadius: '10%',
                 }}
                 onPress={() => {
-                    navigation.navigate('Transpose2', { audio: route.params.audio });
+                    navigate('/t2', { audio: curr_audio });
                 }}
             >
                 <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(33%)' }}>Continue</Text>

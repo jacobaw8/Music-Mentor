@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { ImageBackground, View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, Button, Image } from 'react-native';
+import { useNavigate } from 'react-router-dom';
 //import { Storage, sessionStorage } from '../../storage/Storage';
 
 
 const API_URL = Platform.OS !== 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 //const API_URL = 'http://localhost:5000';
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
+
+    const navigate = useNavigate();
 
     return (
         <View style={styles.back}>
@@ -19,7 +22,7 @@ const HomeScreen = ({ navigation }) => {
             <TouchableOpacity
                 style={styles.input}
                 onPress={() => {
-                    navigation.navigate('TransposeScreens');
+                    navigate('/record');
                 }}
             >
                 <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(-33%)' }}>Transposition</Text>

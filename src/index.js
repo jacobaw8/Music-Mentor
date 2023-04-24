@@ -8,7 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 ReactDOM.render(
     <React.StrictMode>
-        <RecordScreen />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );
