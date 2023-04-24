@@ -112,6 +112,7 @@ const RecordScreen = ({ navigation, route }) => {
                     }}
                 >
                     <Text style={{ color: 'black', alignSelf: 'center', transform: 'translateY(-33%)' }}>Start Lesson!</Text>
+                    <View style={{paddingTop: '150px', borderBottomColor: 'black', borderBottomWidth: '1pt',}} />
                 </TouchableOpacity>
             </View>
         </View>
