@@ -18,9 +18,9 @@ export default function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
+        <Route exact path="/" element={<HomeScreen />} />
         <Route path="/play" element={<PlayScreen />} />
         <Route path="/record" element={<RecordScreen />} />
         <Route path="/t1" element={<TransposeToMelodyScreen />} />
